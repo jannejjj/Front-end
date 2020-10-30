@@ -4,7 +4,7 @@
   "description": "Portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --r"
+    "sass": "node-sass -w Exercises/scss/ -o Exercises/dist/css/ --recursive"
   },
   "repository": {
     "type": "git",
