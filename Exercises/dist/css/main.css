@@ -40,7 +40,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #1e1e1e;
+    background: #121212;
     opacity: 0.999;
     list-style: none;
     transform: translate3d(100%, 0, 0);
@@ -50,7 +50,7 @@
   .menu-branding {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #2b2b2b;
     list-style: none;
     transform: translate3d(-100%, 0, 0);
     transition: all 0.3s ease-out; }
@@ -62,7 +62,7 @@
       background: url("../img/portrait.jpg");
       background-size: cover;
       border-radius: 50%;
-      border: solid 2px #111111;
+      border: solid 2px #050505;
       box-shadow: 0 0 0 2px #3fbb00; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -96,6 +96,107 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.2s; }
 
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #383838;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(56, 56, 56, 0.7); }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 475;
+  font-size: 24px; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 6rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(61, 61, 61, 0.5); }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #3fbb00; }
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #3fbb00;
+        transition: all 0.3s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    width: 225px;
+    height: 225px;
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: solid 2px #050505;
+    box-shadow: 0 0 0 2px #3fbb00; }
+  .about-info .bio {
+    grid-area: bio; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job {
+    background: #454545;
+    padding: 0.5rem;
+    border-bottom: #3fbb00 5px solid; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1f1f1f;
+  color: #fff;
+  height: 60px; }
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -119,75 +220,11 @@
     height: 25vh; }
     .menu-branding .portrait {
       width: 190px;
-      height: 190px; } }
+      height: 190px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; } }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  background: #444;
-  color: #fff;
-  height: 100%;
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-  body#bg-img {
-    background: url(../img/background.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
-    body#bg-img:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(68, 68, 68, 0.6); }
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: 400; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-size: 6rem; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
-
-a {
-  color: #fff;
-  text-decoration: none; }
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
-
-.text-secondary {
-  color: #3fbb00; }
-
-main {
-  padding: 4rem;
-  height: 100%; }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #3fbb00;
-        transition: all 0.3s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
