@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.975;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -118,7 +118,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(49, 49, 49, 0.8); }
+      background: rgba(49, 49, 49, 0.7); }
 
 h1,
 h2,
