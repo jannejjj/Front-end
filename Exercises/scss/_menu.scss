@@ -67,7 +67,7 @@
     margin: 0;
     padding: 0;
     background: darken($primary-color, 15);
-    opacity: 0.999;
+    opacity: 10;
     list-style: none;
     transform: translate3d(100%, 0, 0);
     @include easeOut;
