@@ -190,6 +190,10 @@ main {
     background: #3e3e3e;
     padding: 0.5rem;
     border-bottom: #3fbb00 5px solid; }
+    .about-info .job h6 {
+      font-size: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
 
 .projects {
   display: grid;

@@ -109,6 +109,12 @@ main {
     background: lighten($color: $primary-color, $amount: 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+
+    h6 {
+      font-size: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }
 }
 
