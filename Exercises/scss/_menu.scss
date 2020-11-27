@@ -3,8 +3,8 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 30px; // Moved the button slightly right compared to the video
+  top: 30px; // Since it overlapped with page content on smaller displays
   cursor: pointer;
   @include easeOut;
 
