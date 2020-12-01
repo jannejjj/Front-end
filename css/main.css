@@ -168,7 +168,7 @@ main {
   font-weight: 500;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "item1 item2 item3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     width: 225px;
@@ -180,30 +180,30 @@ main {
     box-shadow: 0 0 0 2px #3fbb00; }
   .about-info .bio {
     grid-area: bio; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job {
+  .about-info .item-1 {
+    grid-area: item1; }
+  .about-info .item-2 {
+    grid-area: item2; }
+  .about-info .item-3 {
+    grid-area: item3; }
+  .about-info .item {
     background: #3e3e3e;
     padding: 0.5rem;
     border-bottom: #3fbb00 5px solid; }
-    .about-info .job h6 {
+    .about-info .item h6 {
       font-size: 15px;
       margin-top: 15px;
       margin-bottom: 15px; }
 
-.projects {
+.jobs {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
   font-weight: 500; }
-  .projects img {
+  .jobs img {
     width: 100%;
     border: 3px #fff solid; }
-    .projects img:hover {
+    .jobs img:hover {
       opacity: 0.7;
       border-color: #3fbb00;
       transition: all 0.3s ease-out; }
@@ -221,7 +221,7 @@ main {
     margin-bottom: 3rem;
     transition: all 0.3s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
+      padding: 1rem 2rem;
       background: #3fbb00;
       color: #fff; }
       .boxes div:hover span {
